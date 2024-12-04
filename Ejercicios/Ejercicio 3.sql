@@ -40,7 +40,6 @@ INSERT INTO Peliculas (ID, Nombre, Duracion, Director, Genero, Nota, Protagonist
 (7, 'El Hoyo', 110, 'Ivan', 'acción', 9.9, "1265"),
 (8, 'Diamante en bruto', 140, 'Paola', 'acción', 8.1, "1265");
 
-Ejercicio 1.- Muestra los DNI y nombres de los actores de reparto junto con el tiempo total de duración de sus peliculas. Utiliza la función GROUP BY para agrupar los resultados.
 
 Ejercicio 2.- Muestra los DNIs de los actores de reparto junto con las peliculas que hayan rodado.
 
@@ -77,4 +76,4 @@ SELECT R.NOMBRE, R.APELLIDO, P.NOMBRE, P.NOTA
 FROM REPARTO AS R INNER JOIN PELICULAS AS P ON R.DNI=P.PROTAGONISTA
 ORDER BY R.NOMBRE ASC, P.NOTA DESC;
 
-Ejercicio 8.- Muestra los nombres de los actores junto con la nota de la pelicula con mayor puntuación que hayan rodado. Utiliza la función GROUP BY para agrupar los resultados.
+
